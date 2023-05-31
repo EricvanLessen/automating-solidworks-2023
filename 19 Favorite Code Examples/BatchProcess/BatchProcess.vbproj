@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<!-- This section defines project-level properties.
+
+       Configuration - Specifies whether the default configuration is Release or Debug.
+       Platform - Specifies what CPU the output of this project can run on.
+       OutputType - Must be "Library" for VSTA.
+       NoStandardLibraries - Set to "false" for VSTA.
+       RootNamespace - In C#, this specifies the namespace given to new files.
+                       In Visual Basic, all objects are wrapped in this namespace at runtime.
+       AssemblyName - Name of the output assembly.
+  -->
+	<PropertyGroup>
+		<ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<OutputType>Library</OutputType>
+		<RootNamespace>BatchProcess.vbproj</RootNamespace>
+		<AssemblyName>BatchProcess</AssemblyName>
+		<StartupObject></StartupObject>
+		<ProjectGuid>{FAB46866-FFF6-46C2-AB1A-E9C0D538A1A6}</ProjectGuid>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<TargetFrameworkProfile></TargetFrameworkProfile>
+	</PropertyGroup>
+	<!-- This section defines properties that are set when the "Debug" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<DefineConstants></DefineConstants>
+		<DefineDebug>true</DefineDebug>
+		<DefineTrace>true</DefineTrace>
+		<DebugSymbols>true</DebugSymbols>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\</OutputPath>
+		<RegisterForComInterop>false</RegisterForComInterop>
+		<RemoveIntegerChecks>false</RemoveIntegerChecks>
+		<NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+	</PropertyGroup>
+	<!-- This section defines properties that are set when the "Release" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<DefineConstants></DefineConstants>
+		<DefineDebug>false</DefineDebug>
+		<DefineTrace>true</DefineTrace>
+		<DebugSymbols>false</DebugSymbols>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\</OutputPath>
+		<RegisterForComInterop>false</RegisterForComInterop>
+		<RemoveIntegerChecks>false</RemoveIntegerChecks>
+		<NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+	</PropertyGroup>
+	<!-- This section enables pre- and post-build steps. However,
+       it is recommended that MSBuild tasks be used instead of these properties.
+  -->
+	<PropertyGroup>
+		<PreBuildEvent></PreBuildEvent>
+		<PostBuildEvent></PostBuildEvent>
+	</PropertyGroup>
+	<!-- This sections specifies references for the project. -->
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Drawing"/>
+		<Reference Include="System.Windows.Forms"/>
+		<Reference Include="System.XML"/>
+		<Reference Include="System.Addin.Contract"/>
+		<Reference Include="Microsoft.VisualStudio.Tools.Applications.Adapter"/>
+		<Reference Include="Microsoft.VisualStudio.Tools.Applications.Contract"/>
+		<Reference Include="SolidWorks.Interop.sldworks">
+			<HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS (4)\api\redist\SolidWorks.Interop.sldworks.dll</HintPath>
+		</Reference>
+		<Reference Include="SolidWorks.Interop.swconst">
+			<HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS (4)\api\redist\SolidWorks.Interop.swconst.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<!-- Visual Basic supports Importing namespaces (equivalent to using statements in C#).-->
+	<ItemGroup>
+		<Import Include="Microsoft.VisualBasic"/>
+		<Import Include="System"/>
+	</ItemGroup>
+	<!-- This section defines the user source files that are part of the
+       project.
+
+       Compile - Specifies a source file to compile.
+       EmbeddedResource - Specifies a .resx file for embedded resources.
+       None - Specifies a file that is not to be passed to the compiler (for instance,
+              a text file or XML file).
+       AppDesigner - Specifies the directory where the application properties files can
+                     be found.
+  -->
+	<ItemGroup>
+		<AppDesigner Include="My Project\"/>
+		<Compile Include="Form1.Designer.vb">
+			<DependentUpon>Form1.vb</DependentUpon>
+		</Compile>
+		<Compile Include="Form1.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="Module1.vb"/>
+		<Compile Include="My Project\AssemblyInfo.vb">
+			<SubType>Code</SubType>
+		</Compile>
+		<EmbeddedResource Include="Form1.resx">
+			<SubType>Designer</SubType>
+			<DependentUpon>Form1.vb</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="My Project\Resources.resx">
+			<Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.vb</LastGenOutput>
+			<CustomToolNamespace>My.Resources</CustomToolNamespace>
+			<SubType>Designer</SubType>
+		</EmbeddedResource>
+		<Compile Include="My Project\Resources.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>Resources.resx</DependentUpon>
+			<SubType>Code</SubType>
+		</Compile>
+		<None Include="app.config"/>
+		<None Include="My Project\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.vb</LastGenOutput>
+		</None>
+		<Compile Include="My Project\Settings.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+			<SubType>Code</SubType>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+		</Compile>
+		<Compile Include="SolidWorksMacro.vb">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Include="SolidWorksMacroStartup.vb">
+			<DependentUpon>SolidWorksMacro.vb</DependentUpon>
+			<SubType>Code</SubType>
+		</Compile>
+	</ItemGroup>
+	<!-- Include the build rules for a VB project.-->
+	<Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets"/>
+	<!-- This section defines VSTA properties that describe the host-changable project properties. -->
+	<ProjectExtensions>
+		<VisualStudio>
+			<FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+				<ProjectProperties HostName="VSTADocName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="vb" TemplatesPath=""/>
+			</FlavorProperties>
+		</VisualStudio>
+	</ProjectExtensions>
+</Project>
