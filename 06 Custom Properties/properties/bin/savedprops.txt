@@ -1,0 +1,12 @@
+Designer
+XXX
+Date_Completed
+XX/XX/XXXX
+Description
+XXX
+Material
+XXX
+Product_ID
+XXX
+Cost
+0.000000
