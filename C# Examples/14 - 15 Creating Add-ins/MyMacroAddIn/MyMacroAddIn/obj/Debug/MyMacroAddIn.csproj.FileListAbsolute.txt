@@ -1,0 +1,7 @@
+E:\Mikes Data\Google Drive\Personal\API Book\2021 test macros\C# Examples\MyMacroAddIn\MyMacroAddIn\bin\Debug\MyMacroAddIn.dll
+E:\Mikes Data\Google Drive\Personal\API Book\2021 test macros\C# Examples\MyMacroAddIn\MyMacroAddIn\bin\Debug\MyMacroAddIn.pdb
+E:\Mikes Data\Google Drive\Personal\API Book\2021 test macros\C# Examples\MyMacroAddIn\MyMacroAddIn\bin\Debug\MyMacroAddIn.tlb
+E:\Mikes Data\Google Drive\Personal\API Book\2021 test macros\C# Examples\MyMacroAddIn\MyMacroAddIn\bin\Debug\SolidWorksTools.dll
+E:\Mikes Data\Google Drive\Personal\API Book\2021 test macros\C# Examples\MyMacroAddIn\MyMacroAddIn\obj\Debug\MyMacroAddIn.csprojResolveAssemblyReference.cache
+E:\Mikes Data\Google Drive\Personal\API Book\2021 test macros\C# Examples\MyMacroAddIn\MyMacroAddIn\obj\Debug\MyMacroAddIn.dll
+E:\Mikes Data\Google Drive\Personal\API Book\2021 test macros\C# Examples\MyMacroAddIn\MyMacroAddIn\obj\Debug\MyMacroAddIn.pdb
