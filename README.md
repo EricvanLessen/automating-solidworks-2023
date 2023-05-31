@@ -11,3 +11,5 @@ Book free chapter:
 
 File download link: 
 [Download File](https://downloads.sdcpublications.com/1094/Automating_SOLIDWORKS_2023_Exercise_Files.zip?Expires=1685685781&Signature=UXCoqD7P1qO5Mxt0AdaKI4tmXuLHO2wovn63GWLbLx2D0IgcQlBRe2RhvfiCGKVW-5B1Q5gGa6nngSdFHMicVs91JJJI8v7ORQgvGw1l5IRs-GxDuukBtb1AF985PgKCSNk4dNFyITSnBCFcjcyoVQ5dlBWJ8naGv4ANQiBfCMPPY10AgyWGknTOoJnaakvRgxLMCRFen5FzdTRL06k9QifOpcHsPaVzBT8Nu-u1dwfTvts72X0udNQ7DX4FKybt-eJeDE6PAxfJWMG~McKLvc8NgoVWF4xXEjq1WwKC5M00J3rzhFq3kgwt7cjsHzxRYRoFMRXu4KYCzQc0Cyr-RA__&Key-Pair-Id=K1TXRN1D7DN1OU)
+
+[SolidWorks API online tutorial](https://youtube.com/playlist?list=PL1TStJR6oVYcjxbDeMPKwwDIAq-iYJTYj)
